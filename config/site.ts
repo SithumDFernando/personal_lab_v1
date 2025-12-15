@@ -15,5 +15,7 @@ export const siteConfig = {
     github: "https://github.com/SithumDFernando",
     linkedin: "https://linkedin.com/in/sithum-fernando",
     email: "sithumdf@gmail.com",
+    facebook: "https://facebook.com/sithum.fernando.1276",
+    //instagram: "https://instagram.com/sithumfernando",
   },
 } as const;

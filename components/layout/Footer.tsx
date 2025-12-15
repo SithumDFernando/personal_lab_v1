@@ -1,7 +1,7 @@
 'use client';
 
 import { siteConfig } from '@/config/site';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -33,6 +33,17 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+            )}
+            {siteConfig.links.facebook && (
+              <a
+                href={siteConfig.links.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
               </a>
             )}
             {siteConfig.links.email && (
