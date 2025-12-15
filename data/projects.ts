@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "project-1",
     title: "AI-Powered Content Generator",
     description: "A full-stack web application that uses GPT-4 to generate marketing content, blog posts, and social media captions. Features real-time collaboration and version control.",
-    imagePath: "/projects/placeholder.png",
+    imagePath: "/projects/placeholder2.png",
     topics: ["Web", "Generative AI"],
     techStack: ["Next.js", "TypeScript", "OpenAI", "PostgreSQL", "Prisma"],
     links: {

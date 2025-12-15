@@ -18,7 +18,7 @@ export default function TopicTag({ topic, className }: TopicTagProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors",
+        "inline-flex items-center rounded-full border px-3.5 py-1 text-xs font-bold uppercase tracking-wide transition-all duration-300 hover:scale-105",
         topicColors[topic],
         className
       )}
