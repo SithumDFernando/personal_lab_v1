@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const config: NextConfig = {
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [],
+  },
+  // Turbopack is enabled by default in Next.js 16
 };
 
-export default nextConfig;
+export default config;
