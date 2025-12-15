@@ -2,32 +2,52 @@
 
 @layer base {
   :root {
+    /* Light Theme */
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
-    --muted: 0 0% 96.1%;
+    --muted: 210 40% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --border: 0 0% 89.8%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --radius: 0.5rem;
+    --border: 214 32% 91%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    /* Cyan/Teal Accent Colors */
+    --primary: 187 100% 42%;
+    --primary-foreground: 0 0% 100%;
+    --cyan: 187 100% 42%;
+    --cyan-light: 187 100% 52%;
+    --teal: 180 50% 30%;
+    --teal-dark: 180 60% 20%;
+
+    --secondary: 187 30% 94%;
+    --secondary-foreground: 180 60% 20%;
+    --accent: 187 50% 90%;
+    --accent-foreground: 180 60% 20%;
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    /* Dark Theme - Teal Gradient Background */
+    --background: 180 60% 8%;
     --foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --border: 0 0% 14.9%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --muted: 180 30% 15%;
+    --muted-foreground: 0 0% 70%;
+    --border: 180 30% 20%;
+    --card: 180 50% 12%;
+    --card-foreground: 0 0% 98%;
+
+    /* Cyan/Teal Accent Colors */
+    --primary: 187 100% 42%;
+    --primary-foreground: 0 0% 100%;
+    --cyan: 187 100% 42%;
+    --cyan-light: 187 100% 52%;
+    --teal: 180 50% 30%;
+    --teal-dark: 180 60% 15%;
+
+    --secondary: 180 40% 18%;
+    --secondary-foreground: 187 100% 70%;
+    --accent: 180 40% 20%;
+    --accent-foreground: 187 100% 70%;
   }
 }
 
@@ -58,12 +78,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--muted-foreground) / 0.3);
+  background-color: hsl(var(--cyan) / 0.3);
   border-radius: var(--radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(var(--muted-foreground) / 0.5);
+  background-color: hsl(var(--cyan) / 0.5);
 }
 
 /* Smooth scroll */
@@ -73,6 +93,6 @@ html {
 
 /* Selection styling */
 ::selection {
-  background-color: hsl(var(--primary) / 0.2);
+  background-color: hsl(var(--cyan) / 0.3);
   color: hsl(var(--foreground));
 }
